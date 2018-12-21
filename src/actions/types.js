@@ -4,7 +4,10 @@ const POSTS = {
   FETCH_FAIL: "POSTS_FETCH_FAIL"
 }
 
-export { POSTS };
+const NEW_POST = {
+  CREATE: "NEW_POST_CREATE",
+  CREATE_SUCCESS: "NEW_POST_CREATE_SUCCESS",
+  CREATE_FAIL: "NEW_POST_CREATE_FAIL"
+}
 
-// export const FETCH_POSTS = "FETCH_POSTS";
-// export const NEW_POST = "NEW_POST";
+export { POSTS, NEW_POST };
