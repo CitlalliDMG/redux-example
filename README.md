@@ -40,9 +40,9 @@ Configure this app with your project-specific details:
 
 {
   "homepage": "https://YOUR_USERNAME.github.io/YOUR_REPOSITORY_NAME",
-  /*...*/
+  // ....
   "scripts": {
-    /*...*/
+    // ....
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   }
