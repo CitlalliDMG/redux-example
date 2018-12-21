@@ -4,9 +4,8 @@ import "./App.css";
 import { Provider } from "react-redux";
 
 import Posts from "./components/Posts";
-import PostForm from "./components/PostForm";
 import store from "./store";
-
+import PostFormContainer from "./components/PostFormContainer";
 
 class App extends Component {
   render() {
@@ -21,7 +20,7 @@ class App extends Component {
               Ejercicio de práctica con React, Redux y Redux-Saga
             </p>
           </header>
-          <PostForm />
+          <PostFormContainer />
           <hr />
           <Posts />
         </div>
@@ -29,5 +28,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;

@@ -1,4 +1,4 @@
-import { POSTS } from "./types";
+import { POSTS, NEW_POST } from "./types";
 
 const fetchPosts = () => ({
   type: POSTS.FETCH
@@ -14,10 +14,27 @@ const setError = error => ({
   error
 });
 
+const createNewPost = () => ({
+  type: NEW_POST.CREATE
+})
+
+const setNewPost = newPost => ({
+  type: NEW_POST.CREATE_SUCCESS,
+  newPost: newPost
+});
+
+const setNewPostError = error => ({
+  type: NEW_POST.CREATE_FAIL,
+  error
+});
+
 export {
   fetchPosts,
   setPosts,
-  setError
+  setError,
+  createNewPost,
+  setNewPost,
+  setNewPostError
 };
 
 // const newPost = () => ({
